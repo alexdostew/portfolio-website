@@ -5,14 +5,23 @@
 
 @font-face {
     font-family: D-DIN;
-    font-weight: bold;
+    font-weight: 200;
     src: url("./fonts/D-DIN-Bold.otf");
 }
 
 @font-face {
     font-family: D-DIN;
-    font-weight: bolder;
+    font-weight: 300;
     src: url("./fonts/D-DINExp-Bold.otf");
+}
+
+a {
+    text-decoration: none;
+    color:#F9F4F1;
+}
+
+a:hover {
+    color:#87FFFF;
 }
 
 body{
@@ -49,8 +58,8 @@ body{
 }
 
 .header-text {
-    
-    font-size: 3em;
+    font-weight: 200;
+    font-size: 2.5em;
 }
 
 .container {
@@ -78,6 +87,7 @@ body{
 
 .header-item {
     margin: 10px;
+    font-size: 1.5em;
 }
 
 .btn-container {
@@ -100,6 +110,7 @@ body{
 
 .button-text {
     z-index: 2;
+    font-size: 1.5em;
 }
 
 .blue {
@@ -133,6 +144,7 @@ body{
 
 .header {
     font-size: 3em;
+    font-weight: 300;
 }
 p {
     font-family: source-serif-pro, serif;
