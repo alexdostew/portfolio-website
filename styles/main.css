@@ -80,7 +80,12 @@ body{
     margin: 10px;
 }
 
+.btn-container {
+    position: relative;
+}
+
 .button {
+    position: relative;
     width: 300px;
     height: 50px;
     background-color:#F9F4F1;
@@ -90,7 +95,42 @@ body{
     justify-content: center;
     font-weight: bolder;
     color: #211622;
+    z-index: 2;
 }
+
+.button-text {
+    z-index: 2;
+}
+
+.blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #87FFFF;
+}
+
+.pink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #FF5EFF;
+}
+
+.btn-container:hover {
+    cursor: pointer;
+}
+
+.btn-container:hover > .button.blue {
+    top: -5px;
+}
+
+.btn-container:hover > .button.pink {
+    top:auto;
+    bottom: -5px;
+}
+
 .header {
     font-size: 3em;
 }
