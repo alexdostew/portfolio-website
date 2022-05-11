@@ -33,9 +33,9 @@
             <div class="row row-break">
                 <div id="projects" class="header header-item">Projects</div>
                 <div class="tab-group">
-                    <div class="header-item tab-header" id="0">Animation</div>
-                    <div class="header-item tab-header" id="1">Graphic Design</div>
-                    <div class="header-item tab-header" id="2">Web Development</div>
+                    <div class="header-item tab-header active" onclick="changeTab(this.id)" id="0">Animation</div>
+                    <div class="header-item tab-header" onclick="changeTab(this.id)" id="1">Graphic Design</div>
+                    <div class="header-item tab-header" onclick="changeTab(this.id)" id="2">Web Development</div>
                 </div>
             </div>
             <div class="tab-container" id="tab-0">
@@ -55,13 +55,6 @@
                             Applications used were Cinema4D, ZBrush, Substance Painter and Adobe After Effects.
                         </div>
                         <div class="row row-break">
-                            <a href="#" class="btn-container">
-                                <div class="button purple">
-                                    <div class="button-text">View Case Study</div>
-                                </div>
-                                <div class="button blue"></div>
-                                <div class="button pink"></div>
-                            </a>
                             <a href="https://youtu.be/NWo4MwE3zfU?t=23" class="btn-container">
                                 <div class="button purple">
                                     <div class="button-text">Watch Video</div>
@@ -85,24 +78,77 @@
                         </div>
                         <hr>
                         <div class="portfolio-item-content">
+                            Modeled, rigged and animated a realistic deer tick for a microbiologist at the Rocky Mountain Laboratories. 
+                            The model was sculpted and textured using ZBrush and Substance Painter, then ported over to Cinema4D for the 
+                            animation and rigging process.
+                        </div>
+                    </div>
+                    <div class="portfolio-image" style="background-image: url('./images/tick.jpg'); background-position: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="tab-container" id="tab-1"  style="display: none;">
+                <div class="portfolio-item">
+                    <img class="portfolio-image-small" src="images/banner.png" alt="">
+                    <div class="portfolio-main">
+                        <h2>Graphic Design Stuff</h2>
+                        <div class="row row-break">
+                            <div class="portfolio-tag">Cinema 4D</div>
+                            <div class="portfolio-tag">Adobe After Effects</div>
+                            <div class="portfolio-tag">ZBrush</div>
+                        </div>
+                        <hr>
+                        <div class="portfolio-item-content">
                             Animation I created for the National Institute of Allergy and Infectious Diseases, 
                             featured on CNN and the NIAID YouTube channel. I created the models, textures and animations. 
                             Applications used were Cinema4D, ZBrush, Substance Painter and Adobe After Effects.
                         </div>
                         <div class="row row-break">
-                            <a href="#" class="btn-container">
+                            <a href="https://youtu.be/NWo4MwE3zfU?t=23" class="btn-container">
                                 <div class="button purple">
-                                    <div class="button-text">View Case Study</div>
+                                    <div class="button-text">Watch Video</div>
                                 </div>
                                 <div class="button blue"></div>
                                 <div class="button pink"></div>
                             </a>
                         </div>
                     </div>
-                    <div class="portfolio-image" style="background-image: url('./images/tick.jpg'); background-position: 50%;"></div>
+                    <div class="portfolio-image"></div>
+                </div>
+            </div>
+
+            <div class="tab-container" id="tab-2" style="display: none;">
+                <div class="portfolio-item">
+                    <img class="portfolio-image-small" src="images/banner.png" alt="">
+                    <div class="portfolio-main">
+                        <h2>Brian's Chameleons</h2>
+                        <div class="row row-break">
+                            <div class="portfolio-tag">Cinema 4D</div>
+                            <div class="portfolio-tag">Adobe After Effects</div>
+                            <div class="portfolio-tag">ZBrush</div>
+                        </div>
+                        <hr>
+                        <div class="portfolio-item-content">
+                            Animation I created for the National Institute of Allergy and Infectious Diseases, 
+                            featured on CNN and the NIAID YouTube channel. I created the models, textures and animations. 
+                            Applications used were Cinema4D, ZBrush, Substance Painter and Adobe After Effects.
+                        </div>
+                        <div class="row row-break">
+                            <a href="https://youtu.be/NWo4MwE3zfU?t=23" class="btn-container">
+                                <div class="button purple">
+                                    <div class="button-text">Watch Video</div>
+                                </div>
+                                <div class="button blue"></div>
+                                <div class="button pink"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-image"></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

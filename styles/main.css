@@ -33,6 +33,7 @@ body{
 .banner {
     width: 100%;
     height: 100%;
+    max-height: 850px;
     margin: 0 auto;
     max-width: 1920px;
     background-image: url("../images/banner.png");
@@ -101,7 +102,7 @@ body{
 
 .button {
     position: relative;
-    width: 300px;
+    width: 250px;
     height: 50px;
     background-color:#F9F4F1;
     border-radius: 50px;
@@ -276,6 +277,15 @@ hr {
     flex: 1;
 }
 
+.break-small {
+    flex-wrap:nowrap;
+}
+
+.logo-header {
+    padding:0 150px 0 0;
+    max-width: 200px;
+}
+
 @media screen and (max-width: 800px) {
     .portfolio-image-small {
         display: block;
@@ -287,5 +297,16 @@ hr {
 
     .portfolio-main {
         max-width: 100%;
+    }
+
+    .break-small {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo-header {
+        padding:0;
     }
 }
